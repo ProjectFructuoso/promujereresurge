@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --w-color: #ffffff;
+    --b-color: #000000;
+    --y-color: #fdd05b;
+}
+
+html img{
+    transition: 0.3s ease-in-out;
+  }
+  html .card
+  {
+    overflow: hidden;
+  }
+  html img:hover{
+    transform: scale(1.07);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+
+
+  /*--------back to Top---------*/
+  #button {
+    display: inline-block;
+    background-color: var(--y-color);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  .back-to-top i{
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+  /*-----whatsApp Button------*/
+  .whatsapp_float {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #25d366;
+    color: #FFFfff;
+    border-radius: 50px;
+    transition: all 0.4s;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+  position: absolute;
+    top: 6px;
+    left: 10px;
+    font-size: 20px;
+}
+
+
+/* for mobile */
+
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      font-size: 20px;
+    }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 110px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+
+/* --------navbar----------- */
+
+.navbar {
+    padding: 15px 0px;
+    box-shadow: 0px 3px 7px #00000052;
+    background: #fdd05b;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    color: var(--b-color) !important;
+}
+
+.navbar .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    font-size: 30px;
+}
+
+.dropdown-menu{
+  background-color: var(--y-color);
+  border: 1px solid var(--y-color);
+}
+
+.dropdown-menu a:hover{
+  background-color:#EE0B44;
+}
+
+
+/* .navbar-brand{
+  font-size: 40px;
+} */
+
+
+/* X-------navbar----------X */
+
+
+/* ----------banner------------ */
+
+#banner {
+    background: url('../img/1.jpg') no-repeat center/cover;
+    height: 90vh;
+}
+
+
+#banner1 {
+    background: url('../img/8.jpeg') no-repeat center/cover;
+    height: 90vh;
+}
+
+/* X---------banner-----------X */
+
+
+/* -- ------------demo------------ -- */
+
+.demo {
+    padding: 40px 0px;
+}
+
+.demo .box {
+    padding: 40px 10px;
+    background: var(--w-color);
+    box-shadow: 0px 5px 9px #0303036b;
+    text-align: center;
+}
+
+.demo .box a {
+    color: var(--b-color) !important;
+}
+
+
+/* --X------------demo------------X-- */
+
+.round-img-1 {
+    background: url('../img/2.jpg') no-repeat center/cover;
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+    max-width: 200px;
+    margin: 40px auto;
+}
+
+.round-img-2 {
+    background: url('../img/3.jpg') no-repeat center/cover;
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+    max-width: 200px;
+    margin: 40px auto;
+}
+
+.abt-ceo {
+    padding: 40px 0px;
+}
+
+.abt-ceo h2 {
+    font-weight: 300;
+}
+
+.abt-ceo ul li {
+    list-style: none;
+}
+/* 
+.abt-ceo .col-lg-5{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 20px;
+} */
+
+
+/* ---------mission-------------- */
+
+#mission {
+    background: #f8f5f5;
+    padding: 50px 0px;
+}
+
+#mission h2 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#mission .card-text {
+    text-align: center;
+}
+
+
+#mission .card{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+
+/* X--------mission-------------X */
+
+#demo2 {
+    padding: 50px 0px;
+}
+
+
+#demo2 h2{
+  font-weight: 300;
+  font-size: 25px;
+}
+
+#demo2 img {
+    border-radius: 7px;
+    box-shadow: 0px 8px 13px #00000052;
+}
+
+#demo2 .play-btn {
+    height: 60px;
+    width: 60px;
+    border-radius: 70px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    background: var(--y-color);
+    color: var(--b-color);
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+#demo2 .play-btn-2 {
+  height: 60px;
+  width: 60px;
+  border-radius: 70px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  background: var(--y-color);
+  color: var(--b-color);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+#demo2 .play-btn:hover,
+#demo2 .dona:hover {
+    background: var(--b-color);
+    color: var(--w-color);
+    box-shadow: 0px 8px 13px #fdd05b;
+}
+
+#demo2 .dona {
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background: var(--y-color);
+    color: var(--b-color);
+    border-radius: 70px;
+}
+
+
+/* ------------------------------------------------------
+                        Presidenta
+---------------------------------------------------------- */
+
+/* ----------banner------------ */
+#banner1 {
+    background: url('../img/11.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+/* X---------banner-----------X */
+
+
+/* ---------sinforosa----------- */
+.dem{
+    background: #CCCCCC;
+    color: #000000;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 12px 12px;
+    text-align: left;
+}
+
+.demo p{
+    padding: 0px 23px 0px 23px;
+    font-size: 16px;
+}
+
+/* X---------sinforosa-----------X */
+
+
+/* ---------presentado----------- */
+#presentado {
+    padding: 50px 0px;
+}
+
+#presentado h2 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* X---------presentado-----------X */
+
+
+/* ---------videos-presentacion-----------*/
+.demo-video{
+  background-color: #e4e1e1c6;
+  margin-bottom: 30px;
+}
+
+.videos-presentacion h2 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.videos-presentacion .card-text {
+    text-align: center;
+}
+
+/*-X--------videos-presentacion-----------X-*/
+
+
+/*--------obrassociales-----------*/
+#banner2 {
+    background: url('../img/d3.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 90vh;
+}
+.obras{
+    background-color:rgba(204, 204, 204, 0.09) ;
+    padding: 20px 30px;
+}
+/*---X-----obrassociales-------X----*/
+
+
+
+/*--------Galerias-----------*/
+#banner3 {
+    background: url('../img/26.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.images-bg{
+  padding-top: 3%;
+  padding-bottom: 8%;
+  background-color: #d8d4d440;
+}
+
+.gallery-btn {
+    background: #2487ce;
+    color: white;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+
+#fotos-filter .active button {
+    background: var(--y-color) !important;
+}
+
+.main-filter li .fsize{
+   color: #000000;
+   background-color:var(--y-color);
+   border-radius: 50%;
+}
+
+.jumbotron {
+    max-width: 450px;
+    margin: 120px auto;
+    font-family: var(--font);
+    background: #f8f8f8;
+    padding: 20px 10px;
+    box-shadow: 0px 8px 13px #00000044;
+    border-radius: 7px;
+}
+
+.page-padding {
+    padding: 20px 20px;
+}
+
+.jumbotron .title {
+    font-size: 35px;
+}
+
+#exTab1 .tab-content {
+    padding: 5px 15px;
+}
+
+#exTab1 .nav-pills>li>a{
+    margin: 20px;
+    margin-left: 0.95rem;
+    margin-right: 0.95rem;
+    border-radius: 4px 4px 0 0;
+    font-weight: bold;
+}
+/*---X-----Galerias-------X----*/
+
+
+/*--------Videos-----------*/
+#banner-video{
+    background: url('../img/ved.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+/* .demo-video h2{
+    
+} */
+
+/*---X-----Videos-------X----*/
+
+
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.clients h2{
+  font-weight: 300;
+  font-size: 25px;
+}
+
+#contact-main-contact{
+background-color: var(--y-color);
+height: 20vh;
+}
+
+
+.contact .info-wrap {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  .contact .info {
+    background: #fff;
+  }
+  .contact .info i {
+    font-size: 20px;
+    color: var(--y-color);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #ffeee8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2b2320;
+  }
+
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #65534c;
+  }
+  .contact .info:hover i {
+    background: var(--y-color);
+    color: #fff;
+  }
+
+  .formulario{
+    font-size: 30px;
+  }
+
+  .contact .php-email-form {
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    background: #fff;
+  }
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: var(--y-color);
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contact .php-email-form .error-message br + br {
+    margin-top: 25px;
+  }
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  .contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  .contact .php-email-form button[type=submit] {
+    background: #FDD05B;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  .contact .php-email-form button[type=submit]:hover {
+    background: brown;
+  }
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+ /*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients{
+  margin-top: -50px;
+}
+.clients .clients-wrap {
+  border-top: 1px solid #f1eeed;
+  border-left: 1px solid #f1eeed;
+}
+.clients .client-logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #f1eeed;
+  border-bottom: 1px solid #f1eeed;
+  overflow: hidden;
+  background: #fff;
+  height: 80px;
+}
+.clients .client-logo img {
+  transition: all 0.3s ease-in-out;
+  height: 40px;
+  filter: none;
+}
+
+
+.clients .client-logo .logo3 {
+  transition: all 0.3s ease-in-out;
+  height: 100px;
+  filter: none;
+}
+.clients .client-logo:hover img {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+
+
+/* ------modal----- */
+
+.modal-body{
+  background-color: var(--y-color);
+  border: none;
+}
+
+
+
+
+/*--------thank you-------*/
+
+.page-padding {
+  padding: 20px 20px;
+}
+
+.jumbotron .title {
+  background-color: var(--y-color);
+  font-size: 35px;
+}
+
+.jumbotron{
+  background-color: var(--y-color);
+}
+
+.jumbotron .btn-success {
+background-color: #49501F;
+border: none;
+}
+
+
+
+/* ------footer----- */
+
+footer {
+    padding: 50px 0px;
+    background: #f8f5f5;
+}
+
+footer h4 {
+    font-size: 18px;
+}
+
+footer ul li {
+    font-size: 15px;
+    font-weight: 400;
+    list-style: none;
+}
+
+footer ul li a {
+    color: var(--b-color) !important;
+}
+
+footer .social-icons a button {
+    height: 40px;
+    width: 40px;
+    border-radius: 70px;
+    border: none !important;
+    outline: none !important;
+    background: var(--y-color);
+    color: var(--b-color);
+    margin-right: 10px;
+}
+
+footer .social-icons a button:hover {
+    background: var(--b-color);
+    color: var(--w-color);
+}
+
+
+/* X-----footer----X */
